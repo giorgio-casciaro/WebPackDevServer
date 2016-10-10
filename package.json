@@ -1,0 +1,31 @@
+{
+  "name": "ServiceStaticWebServerWebPack",
+  "description": "ServiceStaticWebServerWebPack",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giorgio-casciaro/ServiceStaticWebServerWebPack.git"
+  },
+  "author": "Giorgio Casciaro",
+  "license": "ISC",
+  "scripts": {
+    "dev": "webpack-dev-server  --host 0.0.0.0  --open --inline --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "bugs": {
+    "url": "https://github.com/giorgio-casciaro/ServiceStaticWebServerWebPack/issues"
+  },
+  "private": true,
+  "dependencies": {
+    "vue": "^2.0.1"
+  },
+  "devDependencies": {
+    "av-ts": "^0.3.0",
+    "css-loader": "^0.25.0",
+    "typescript": "^2.0.3",
+    "vue-loader": "^9.5.1",
+    "vue-ts-loader": "0.0.3",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
