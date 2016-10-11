@@ -1,6 +1,6 @@
 module.exports = {
-    entry: { app: './app.ts', },
-    output: { filename: 'app.js' },
+    entry: { app: './src/main.ts', },
+    output: { filename: './build/main.js' },
 
     // resolve TypeScript and Vue file
     resolve: {
