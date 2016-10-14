@@ -1,12 +1,14 @@
-//import {Vue} from 'av-ts'
-import App from './vue/app.vue'
-import store from './vue/store'
-//var Vuex = require('vuex');
-var Vue = require('vue');
-//Vue.use(Vuex)
+import * as Vue from 'vue'
+//import * as App from './App.vue'
+var store=require('./vuex/store').default
+var router=require('./router').default
+var App=require('./components/App')
+
 
 new Vue({
-  el: '#app',
-  store,
-  render: h => h(App)
+  router:router,
+  store:store, // inject store to all children
+  el: '#approot',
+  render: h => h(App),
+  components: { App }
 })

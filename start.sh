@@ -41,7 +41,8 @@ cd ../..
 
 gnome-terminal -e "docker exec -i -t --user $MICROSERVICE_USER $MICROSERVICE_ID /bin/sh "  2>/dev/null
 lxterminal -e "docker exec -i -t --user $MICROSERVICE_USER   $MICROSERVICE_ID  /bin/sh "  2>/dev/null
-docker exec -i -t --user $MICROSERVICE_USER  $MICROSERVICE_ID npm run dev
+docker exec -i -t --user $MICROSERVICE_USER  $MICROSERVICE_ID /bin/sh
+#npm run dev
 #npm start
 
 docker stop $MICROSERVICE_ID

@@ -4,13 +4,20 @@ MAINTAINER Giorgio Casciaro <giorgio.casciaro@gmail.com>
 
 RUN useradd -ms /bin/bash service
 
-#RUN npm install -g typescript webpack webpack-dev-server
+
 
 VOLUME /app
 
 EXPOSE 3000
 
 WORKDIR /app
+
+#RUN npm install -g vue-cli
+RUN apt-get update
+RUN apt-get install  -y  unzip
+#RUN apt-get install -y git
+USER service
+
 #
 # FROM nginx:latest
 # ADD ./default.conf /etc/nginx/conf.d/
