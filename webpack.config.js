@@ -12,7 +12,7 @@ module.exports = {
   resolve: {
     alias: {
       //'src': path.resolve(__dirname, 'src'),
-      'assets/Images': path.resolve(__dirname, 'CivilStyle-master/Images'),
+      //'assets': path.resolve(__dirname, 'CivilStyle-master'),
       'components': path.resolve(__dirname, 'src/components')
     },
     extensions: ['', '.ts', '.vue', '.js']
@@ -38,6 +38,14 @@ module.exports = {
    contentBase: __dirname + "/build",
    hot: true,
    inline: true,
-   historyApiFallback: false
+   historyApiFallback: false,
+   proxy: {
+      '/Images/*': {
+        target: 'https://rawgit.com/giorgio-casciaro/CivilStyle/master/',
+        changeOrigin: true,
+        //ignorePath:true,
+        https: true
+      }
+    }
  },
 }

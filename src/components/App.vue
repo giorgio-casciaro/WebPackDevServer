@@ -1,8 +1,8 @@
 <template lang="jade">
 div.app
-  header
+  appHeader
   router-view(name="main") Loading
-  footer
+  appFooter
 </template>
 
 <script >
@@ -10,22 +10,23 @@ var data={};
 var component={
   data(){ return data; },
   components:{
-    header:require("components/blocks/complex/header"),
-    footer:require("components/blocks/complex/footer")
+    appHeader:require("components/blocks/complex/appHeader"),
+    appFooter:require("components/blocks/complex/appFooter")
   }
 }
 export default component
 </script>
 
 <style>
-    body {
-        font : 100% Helvetica, sans-serif;
-        color: #ecf0f1;
-        text-align: center;
-        background-color: #34495e;
-    }
-    .container {
-        margin: 0 auto;
-        padding-top: 70px;
-    }
+  p{ white-space: pre;}
+  body {
+    font : 100% Helvetica, sans-serif;
+    color: #ecf0f1;
+    text-align: center;
+    background-color: #34495e;
+  }
+  .container {
+    margin: 0 auto;
+    padding-top: 70px;
+  }
 </style>

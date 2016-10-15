@@ -1,14 +1,14 @@
 <template lang="jade">
 div
-  Logo
-  Menu
+  appLogo
+  appMenu
 </template>
 
 <script >
 
 var subComponents={
-  menu:require("components/blocks/tiny/menu"),
-  logo:require("components/blocks/tiny/logo")
+  appMenu:require("components/blocks/tiny/menu"),
+  appLogo:require("components/blocks/tiny/logo")
 };
 
 var data={};

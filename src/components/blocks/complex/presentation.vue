@@ -1,6 +1,9 @@
 <template lang="jade">
 div
-  h1 presentation
+  h1 Civil Connect
+  p Crea e organizza la tua community
+    | o segui quella più vicina a te.
+  a Scopri di più
 </template>
 
 <script >
@@ -14,4 +17,5 @@ div
 </script>
 
 <style>
+
 </style>

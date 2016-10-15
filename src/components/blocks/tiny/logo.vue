@@ -1,6 +1,6 @@
 <template lang="jade">
 div
-  img(src='assets/Images/LogoHeader.png')
+  img(src='/Images/LogoHeader.png')
 </template>
 
 <script >

@@ -1,7 +1,10 @@
 <template lang="jade">
 div
   ul
-    li:a test
+    li: a Chi siamo
+    li: a Cosa Facciamo
+    li: a Registrati
+    li: a test
 </template>
 
 <script >
