@@ -12,7 +12,8 @@
     "dev": "webpack-dev-server  --host 0.0.0.0 --open  --inline --hot",
     "buil45d": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "build": "webpack --progress --hide-modules",
-    "style": "curl -LOk  https://github.com/giorgio-casciaro/CivilStyle/archive/master.zip && unzip -ou master.zip && rm master.zip "
+    "postinstall" : "npm run update_style",
+    "update_style": "curl -LOk  https://github.com/giorgio-casciaro/CivilStyle/archive/master.zip && unzip -ou master.zip && rm master.zip "
   },
   "bugs": {
     "url": "https://github.com/giorgio-casciaro/ServiceStaticWebServerWebPack/issues"
